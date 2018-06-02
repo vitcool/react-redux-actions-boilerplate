@@ -1,0 +1,40 @@
+{
+  "plugins": ["react"],
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "jest": true
+  },
+  "globals": {
+    "process": true,
+    "console": true,
+    "fetch": true,
+    "gapi": true,
+    "environment": true,
+    "navigator": true,
+    "window": true,
+    "document": true
+  },
+  "rules": {
+    "sort-imports": [0],
+    "no-invalid-this": [0],
+    "no-return-assign": [0],
+    "arrow-body-style": [0],
+    "comma-dangle": [1, "never"],
+    "react/no-unused-prop-types": 1,
+    "react/no-children-prop": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    },
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "16.1.1"
+    },
+    "propWrapperFunctions": ["forbidExtraProps"]
+  }
+}
