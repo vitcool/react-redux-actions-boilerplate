@@ -1,0 +1,1 @@
+export const getTestAction = state => state.test.testData || false;
